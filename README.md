@@ -26,27 +26,27 @@ _We are a group of students of higher degree of Video Game Development. Our grou
 
 #### Daniel Atienza:
 
-Correo / _e-mail_: 
+Correo / _e-mail_: danielatienza2017@cev.com
 
-Portfolio: [Artstation ]()
+Portfolio: [Artstation ](https://www.artstation.com/atiendani)
 
 #### Alessandro Bonfanti:
 
-Correo / _e-mail_: 
+Correo / _e-mail_: alessandrobonfanti2017@cev.com
 
-Portfolio: [Artstation ]()
+Portfolio: [Artstation ](https://www.artstation.com/sandr0)
 
 #### Marc Puente:
 
-Correo / _e-mail_: 
+Correo / _e-mail_: marcpuente2017@cev.com
 
-Portfolio: [Artstation ]()
+Portfolio: [Artstation ](https://www.artstation.com/lasaraz)
 
 #### Nil Martín:
 
-Correo / _e-mail_:
+Correo / _e-mail_: nilmartin2017@cev.com
 
-Portfolio: [Artstation ]()
+Portfolio: [Artstation ](https://www.artstation.com/nil05barney)
 
 
 ###### *Our regards, DAMN WORKS.*
