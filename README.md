@@ -1,5 +1,5 @@
 # 7 LIVES - FINAL PROJECT
-[![](https://github.com/JonCervellera/Crosby/blob/master/WikiResources/Titulo_final.jpg)](https://www.youtube.com/watch?v=n5zUn9TvCWs)
+[![](https://github.com/Nil05Barney/7-LIVES---FINAL-PROJECT/blob/master/WikiResources/7%20lives.png)]
 ###### Click on this image to see the game's trailer. 
 
 # **7 LIVES** 
