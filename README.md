@@ -19,38 +19,39 @@ _7 Lives it's a 2.5D platform game developed from the old popular saying, where 
 
 ![](https://github.com/Nil05Barney/7-LIVES---FINAL-PROJECT/blob/master/WikiResources/logo.png)
 
-Somos un grupo de estudiantes de grado superior de Desenvolupamiento de Videojuegos. Nuestro grupo esta formado por Daniel Atienza, Alessandro Bonfanti, Marc Puente y Nil Martín. 7 LIVES es nuestro proyecto de final del grado.
+Somos un grupo de estudiantes de grado superior de Desenvolupamiento de Videojuegos. Nuestro grupo esta formado por Daniel Atienza, Alessandro Bonfanti, Marc Puente y Nil Martín. 7 LIVES es nuestro proyecto de final del grado, esperemos que os guste y difruteis de la aventura.
 
-_Hi everybody, we are Victor Castejon, Alex Nebot and Jon Cervellera, a group of students from a Game Design and Development Degree. This is our final degree project, and we hope you enjoy it as much as we did while developing it._
-
-Para más información, os invitamos a visitar la wiki del proyecto. _If you want more information, we recommend you to visit the project's wiki._ 
-
-[Ir al Game Design Document / _Go to the Game Design Document_](https://github.com/JonCervellera/Crosby/wiki)
+_We are a group of students of higher degree of Video Game Development. Our group is formed by Daniel Atienza, Alessandro Bonfanti, Marc Puente and Nil Martín. 7 LIVES is our project at the end of the degree, we hope you like and enjoy the adventure.._
 
 
-#### Victor Castejon:
+#### Daniel Atienza:
 
-Correo / _e-mail_: caste.castejon@gmail.com
+Correo / _e-mail_: 
 
-Portfolio: [Artstation Victor Castejon](https://www.artstation.com/caste)
+Portfolio: [Artstation ]()
 
-#### Jon Cervellera:
+#### Alessandro Bonfanti:
 
-Correo / _e-mail_: joon_1012@hotmail.com
+Correo / _e-mail_: 
 
-Portfolio: [Artstation Jon Cervellera](https://www.artstation.com/joncervellera)
+Portfolio: []()
 
-#### Alex Nebot:
+#### Marc Puente:
 
-LinkedIn: [LinkedIn - Alex Nebot](https://www.linkedin.com/in/alex-nebot-oller)
+Correo / _e-mail_: 
 
-Correo / _e-mail_: alex.nebot.sds@gmail.com
+Portfolio: []()
 
-Portfolio: [Github - Alex Nebot](https://github.com/agune15)
+#### Nil Martín:
 
-###### *Our greetings, Crosby Games.*
+Correo / _e-mail_:
+
+Portfolio: []()
+
+
+###### *Our greetings, DAMN WORKS.*
 
 
 ## Licencia / _License_
 
-[Puedes revisar la licencia del contenido del proyecto aquí. / You can check the licence of the project's content here.](https://github.com/JonCervellera/Crosby/blob/master/LICENSE.md)
+[Puedes revisar la licencia del contenido del proyecto aquí. / You can check the licence of the project's content here.]()
