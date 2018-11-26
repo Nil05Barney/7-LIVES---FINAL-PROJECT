@@ -1,6 +1,5 @@
-# 7 LIVES - FINAL PROJECT
-[![](https://github.com/Nil05Barney/7-LIVES---FINAL-PROJECT/blob/master/WikiResources/7%20lives.png)]
-###### Click on this image to see the game's trailer. 
+# 7 LIVES - ALPHA
+![](https://github.com/Nil05Barney/7-LIVES---FINAL-PROJECT/blob/master/WikiResources/7%20lives.png)
 
 # **7 LIVES** 
 
@@ -12,14 +11,15 @@ _Face your fears and chase the Death to his dimension to recover your lives !_
 
 7 Lives es un juego plataformas 2.5D desarollado a partir del viejo dicho popular, dónde un gato tiene 7 vidas. El arte tiene un estilo cartoon y "Stylized".
 
-_._ 
+_7 Lives it's a 2.5D platform game developed from the old popular saying, where a cat has 7 lives. Art has a style cartoon and "Srylized"._ 
 
 
-## Contacto / _Contact_
+## Contacto de la empresa/ _Company contact_
 
-![](https://github.com/JonCervellera/Crosby/blob/master/WikiResources/logo_crosby.jpg)
 
-Hola a todos, somos Victor Castejon, Alex Nebot y Jon Cervellera, un grupo de estudiantes de grado superior de Desenvolupamiento de Videojuegos. Este es nuestro proyecto de final del grado, y esperamos que lo disfruteis tanto como nosotros al desenvoluparlo.
+![](https://github.com/Nil05Barney/7-LIVES---FINAL-PROJECT/blob/master/WikiResources/logo.png)
+
+Somos un grupo de estudiantes de grado superior de Desenvolupamiento de Videojuegos. Nuestro grupo esta formado por Daniel Atienza, Alessandro Bonfanti, Marc Puente y Nil Martín. 7 LIVES es nuestro proyecto de final del grado.
 
 _Hi everybody, we are Victor Castejon, Alex Nebot and Jon Cervellera, a group of students from a Game Design and Development Degree. This is our final degree project, and we hope you enjoy it as much as we did while developing it._
 
