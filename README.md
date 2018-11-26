@@ -34,22 +34,22 @@ Portfolio: [Artstation ]()
 
 Correo / _e-mail_: 
 
-Portfolio: []()
+Portfolio: [Artstation ]()
 
 #### Marc Puente:
 
 Correo / _e-mail_: 
 
-Portfolio: []()
+Portfolio: [Artstation ]()
 
 #### Nil Martín:
 
 Correo / _e-mail_:
 
-Portfolio: []()
+Portfolio: [Artstation ]()
 
 
-###### *Our greetings, DAMN WORKS.*
+###### *Our regards, DAMN WORKS.*
 
 
 ## Licencia / _License_
