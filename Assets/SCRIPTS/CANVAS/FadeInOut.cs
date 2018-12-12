@@ -7,9 +7,12 @@ public class FadeInOut : MonoBehaviour
 {
     public Image img;
 
+    public GameObject fade;
+
     public void Awake()
     {
         StartCoroutine(FadeImage(true));
+        fade.SetActive(true);
     }
 
     IEnumerator FadeImage(bool fadeAway)
@@ -37,6 +40,8 @@ public class FadeInOut : MonoBehaviour
                 yield return null;
 
             }
+
+            fade.SetActive(false);
         }
     }
 }

@@ -6,22 +6,28 @@ using UnityEngine.SceneManagement;
 public class PauseButtons : MonoBehaviour
 {
     public GameObject pausePanel;
+    public GameObject optionsPanel;
+    private GAMEMANAGER gameManager;
 
     public bool gamePaused;
 
     // Use this for initialization
     void Start()
     {
-        pausePanel.SetActive(false);
         gamePaused = false;
+        gameManager = GameObject.FindGameObjectWithTag("GAMEMANAGER").GetComponent<GAMEMANAGER>();
+    }
 
+    void Update()
+    {
+        optionsPanel.SetActive(false);
     }
 
     public void Pause()
     {
-        gamePaused = true;
-
         pausePanel.SetActive(true);
+
+        gamePaused = true;
 
         Time.timeScale = 0;
 
@@ -36,38 +42,29 @@ public class PauseButtons : MonoBehaviour
         pausePanel.SetActive(false);
 
         Time.timeScale = 1;
+
+        gameManager.Resume();
     }
 
     public void Restart(int num)
     {
         Debug.Log("REEEEEESTAAAAART" + num);
+        Time.timeScale = 1;
         SceneManager.LoadScene(2);
     }
 
     public void OptionsPause(int num)
     {
         Debug.Log("OPTIONS---PAUSE" + num);
-        SceneManager.LoadScene(5);
+        optionsPanel.SetActive(true);
+        pausePanel.SetActive(false);
     }
 
     public void Home(int num)
     {
+        Time.timeScale = 1;
         Debug.Log("HOOOOMEEEEE" + num);
         SceneManager.LoadScene(1);
     }
-
-    /*public void ControlsGame(int num)
-    {
-        Debug.Log("ControlsGame" + num);
-        SceneManager.LoadScene(12);
-    }
-
-    public void Menu(int num)
-    {
-        Debug.Log("menu" + num);
-        SceneManager.LoadScene(1);
-
-    }*/
-
 
 }

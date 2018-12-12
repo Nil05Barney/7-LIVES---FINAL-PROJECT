@@ -17,7 +17,6 @@ public class GameplayHud : MonoBehaviour
         anim = GetComponent<Animator>();
         Time.timeScale = 1;
 
-        UpdateCountdown(57);
         UpdateLifeText(5);
     }
 
@@ -34,13 +33,6 @@ public class GameplayHud : MonoBehaviour
         if (time <= 5)
         {
             anim.SetBool("5left", true);
-        }
-
-        if (time <= 0)
-        {
-            Debug.Log("DEATH");
-            anim.SetBool("5left", false);
-            Time.timeScale = 0;
         }
     } 
 }

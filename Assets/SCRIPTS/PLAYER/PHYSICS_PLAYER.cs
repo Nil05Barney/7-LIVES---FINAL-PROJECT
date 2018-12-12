@@ -34,11 +34,16 @@ public class PHYSICS_PLAYER : MonoBehaviour
     public int wNumRays;
     public float wDistBTrays;
     
+    private PLAYER player;
 
-
-    protected virtual void Start()
+    public virtual void Initialation()
     {
+        
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PLAYER>();
+        player.Init();
+        
         isFacingRight = true;
+
     }
 
     

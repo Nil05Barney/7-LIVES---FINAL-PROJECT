@@ -18,7 +18,7 @@ public class PLAYER : PHYSICS_PLAYER
 
     private Vector3 moveVector = Vector3.zero;
 
-    private CharacterController controller;
+    public CharacterController controller;
 
     private float crouchHeight;
     private float standarHeight;
@@ -27,20 +27,41 @@ public class PLAYER : PHYSICS_PLAYER
 
     public float xVelocity;
 
+    public AudioSource jumpSFX;
+    //public AudioSource walkSFX;
+    public AudioSource slideSFX;
+
+    public PLAYER_VIDA playerVida;
+
+    public GameObject panel;
+
+    public void Init()
+    {
+        playerVida = GameObject.FindGameObjectWithTag("Player").GetComponent<PLAYER_VIDA>();
+        controller = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>();
+
+        playerVida.Ini();
+
+        anim = GetComponent<Animator>();
+        controller.enabled = true;
+    }
+
     protected override void FixedUpdate()
     {
         base.FixedUpdate();
         anim = GetComponent<Animator>();
 
         controller = GetComponent<CharacterController>();
+        //smoothCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<SmoothCamera>();
 
         standarHeight = 1.9f;
         crouchHeight = 0.9f;
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
+
         speed = 10.0f;
 
         float translation = Input.GetAxis("Horizontal") * speed;
@@ -55,8 +76,10 @@ public class PLAYER : PHYSICS_PLAYER
             GetUp();
         }
 
+
         if (Input.GetButtonDown("Fire3"))
         {
+            slideSFX.Play();
             Sliding();
         }
 
@@ -69,7 +92,10 @@ public class PLAYER : PHYSICS_PLAYER
         {
             moveVector.y = jumpForce;
             jumpCounter --;
-            
+
+            anim.SetTrigger("isJumping");
+            jumpSFX.Play();
+
             Debug.Log("SALTADOOO");
             jump = false;
         }
@@ -88,8 +114,6 @@ public class PLAYER : PHYSICS_PLAYER
 
         if (controller.isGrounded)
         {
-            anim.SetBool("isIdle", true);
-
             jumpCounter = 1;
 
             moveVector.x = axis;
@@ -113,21 +137,46 @@ public class PLAYER : PHYSICS_PLAYER
         }
     }
 
-    public void StartJump()
+    public void GodJump()
     {
-        anim.SetTrigger("isJumping");
+        speed = speed * 2;
+        panel.SetActive(false);
+
+        controller.enabled = false;
+
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            transform.Translate(Vector3.up * speed * Time.deltaTime);
+        }
+
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            transform.Translate(-Vector3.up * speed * Time.deltaTime);
+        }
+    }
+
+    public void StartJump()
+    {   
         jump = true;
     }
 
     public void MuelleJump()
     {
-        moveVector.y = jumpForce * 2;
+        moveVector.y = jumpForce*1.5f;
+        moveVector.x = 10;
         Debug.Log("MUELLE");
+    }
+
+    public void SetaJump()
+    {
+        moveVector.y = jumpForce * 2f;
+        Debug.Log("setajump");
     }
 
     public void PinxosDamageEfect()
     {
-        axis = -6 * speed;
+        moveVector.x = -3;
+        moveVector.y = 5;
     }
 
     public void SetAxis(float h)
@@ -159,6 +208,13 @@ public class PLAYER : PHYSICS_PLAYER
             anim.SetBool("isRunning", true);
             anim.SetBool("isIdle", false);
         }
+
+        if ((translation == 0))
+        {
+            anim.SetBool("isRunning", false);
+            anim.SetBool("isIdle", true);
+        }
+
     }
 
     public void Crouching()
@@ -174,6 +230,8 @@ public class PLAYER : PHYSICS_PLAYER
 
             jumpCounter = 0;
         }
+
+        //smoothCamera.CameraSliding();
     }
 
     public void GetUp()
@@ -186,6 +244,8 @@ public class PLAYER : PHYSICS_PLAYER
         controller.height = standarHeight;
 
         xVelocity = axis * speed;
+
+        //smoothCamera.CameraNormal();
     }
 
     public void Sliding()
@@ -201,6 +261,8 @@ public class PLAYER : PHYSICS_PLAYER
 
             jumpCounter = 0;
         }
+
+        //smoothCamera.CameraSliding();
     }
 
     public void NoSliding()
@@ -213,6 +275,8 @@ public class PLAYER : PHYSICS_PLAYER
         controller.height = standarHeight;
         jumpCounter = 0;
         xVelocity = axis * speed;
+
+        //smoothCamera.CameraNormal();
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
@@ -223,6 +287,9 @@ public class PLAYER : PHYSICS_PLAYER
         {
             case "Wall":
                 Destroy(hit.gameObject);
+                break;
+            case "Ground":
+                //walkSFX.Play();
                 break;
             default:
                 break;

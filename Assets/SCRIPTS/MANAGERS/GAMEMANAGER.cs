@@ -14,14 +14,22 @@ public class GAMEMANAGER : MonoBehaviour
 
     public bool isPauuuse;
 
+    //private PLAYER player;
+
+    private PHYSICS_PLAYER physics;
+
     private void Awake()
     {
         hud = GameObject.FindGameObjectWithTag("HUD").GetComponent<HUD>();
+        //player = GameObject.FindGameObjectWithTag("Player").GetComponent<PLAYER>();
+        physics = GameObject.FindGameObjectWithTag("Player").GetComponent<PHYSICS_PLAYER>();
 
         countdown = 0;
 
         hud.UpdateCountdown(countdown);
 
+        physics.Initialation();
+        //player.Init();
     }
 
     public void Resume()
@@ -34,10 +42,10 @@ public class GAMEMANAGER : MonoBehaviour
 
     public void Pause()
     {
+        hud.OpenPausePanel();
         isPauuuse = true;
         gamePaused = true;
         Time.timeScale = 0;
-        hud.OpenPausePanel();
     }
 
     public void LoadScene(int numScene)
@@ -55,9 +63,9 @@ public class GAMEMANAGER : MonoBehaviour
     {
         int highScore = 0;
 
-        if (PlayerPrefs.HasKey("HighScore"))
+        if (PlayerPrefs.HasKey("BEST TIME"))
         {
-            highScore = PlayerPrefs.GetInt("HighScore");
+            highScore = PlayerPrefs.GetInt("BEST TIME");
         }
 
         if (countdown > highScore)
@@ -73,8 +81,6 @@ public class GAMEMANAGER : MonoBehaviour
     {
         gameover = true;
         SaveGame();
-
-        LoadScene(3);
     }
 
     public void PlayerLife(int pLife)

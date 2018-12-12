@@ -19,7 +19,7 @@ public class INPUTMANAGER : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         if (!gameManager.isPauuuse)
         {
@@ -29,6 +29,17 @@ public class INPUTMANAGER : MonoBehaviour
             if (Input.GetButtonDown("Jump"))
             {
                 player.StartJump();
+            }
+
+            if (Input.GetKey(KeyCode.F10))
+            {
+                player.GodJump();
+            }
+
+            if (Input.GetKey(KeyCode.F9))
+            {
+                player.controller.enabled = true;
+                player.panel.SetActive(true);
             }
         }
 

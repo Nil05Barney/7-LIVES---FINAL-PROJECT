@@ -3,23 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class OptionsButtons : MonoBehaviour
+public class OptionsButtonsGame : MonoBehaviour
 {
     public GameObject optionsPanel;
-    public GameObject menuPanel;
-    public Animator anim;
+    public GameObject pausePanel;
+    public GameObject resolutionImage;
+    public GameObject qualityImage;
+    public GameObject controlsImage;
 
     public void Awake()
     {
-        anim = GetComponent<Animator>();    
+        resolutionImage.SetActive(false);
+        qualityImage.SetActive(false);
+        controlsImage.SetActive(false);
     }
 
     public void Resolution(int num)
     {
-        Debug.Log("RESOLUTION" + num); 
-        anim.SetBool("Resolution", true);
-        anim.SetBool("Quality", false);
-        anim.SetBool("Controls", false);
+        Debug.Log("RESOLUTION" + num);
+        resolutionImage.SetActive(true);
+        qualityImage.SetActive(false);
+        controlsImage.SetActive(false);
     }
 
     public void Resolution1280x720(int num)
@@ -40,16 +44,14 @@ public class OptionsButtons : MonoBehaviour
         Debug.Log("1920 x 1080​");
     }
 
-//------------------------------------------------------------------------------------
+    //------------------------------------------------------------------------------------
 
     public void Quality(int num)
     {
         Debug.Log("QUALITY" + num);
-
-        anim.SetBool("Quality", true);
-        anim.SetBool("Resolution", false);
-        anim.SetBool("Controls", false);
-
+        resolutionImage.SetActive(false);
+        qualityImage.SetActive(true);
+        controlsImage.SetActive(false);
     }
 
     public void QualityLow(int num)
@@ -76,7 +78,7 @@ public class OptionsButtons : MonoBehaviour
         QualitySettings.SetQualityLevel(5);
     }
 
-//------------------------------------------------------------------------------------
+    //------------------------------------------------------------------------------------
 
     public void Color(int num)
     {
@@ -88,15 +90,14 @@ public class OptionsButtons : MonoBehaviour
         Debug.Log("AUDIO");
     }
 
-//-----------------------------------------------------------------------------------
+    //-----------------------------------------------------------------------------------
 
     public void Controls(int num)
     {
         Debug.Log("CONTROLS");
-        anim.SetBool("Quality", false);
-        anim.SetBool("Resolution", false);
-        anim.SetBool("Controls", true);
-
+        resolutionImage.SetActive(false);
+        qualityImage.SetActive(false);
+        controlsImage.SetActive(true);
     }
 
     //-----------------------------------------------------------------------------------
@@ -104,7 +105,10 @@ public class OptionsButtons : MonoBehaviour
     public void Return()
     {
         Debug.Log("RETURN");
-        menuPanel.SetActive(true);
+        pausePanel.SetActive(true);
         optionsPanel.SetActive(false);
+        resolutionImage.SetActive(false);
+        qualityImage.SetActive(false);
+        controlsImage.SetActive(false);
     }
 }
