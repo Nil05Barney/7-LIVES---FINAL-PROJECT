@@ -1,0 +1,227 @@
+fileFormatVersion: 2
+guid: 597e84ab12f80ed4894a985234cfefef
+timeCreated: 1540639314
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: group1_pCube1
+    100002: group1_pCube2
+    100004: group1_pCube3
+    100006: group1_pCube4
+    100008: group1_pCube5
+    100010: group1_polySurface21_polySurface25
+    100012: group1_polySurface23
+    100014: group1_polySurface26_polySurface21
+    100016: group1_pTorus3
+    100018: //RootNode
+    100020: polySurface14_polySurface7
+    100022: polySurface24
+    100024: polySurface7_polySurface15
+    100026: pTorus2_group1
+    100028: textureEditorIsolateSelectSet_group1_polySurface13
+    400000: group1_pCube1
+    400002: group1_pCube2
+    400004: group1_pCube3
+    400006: group1_pCube4
+    400008: group1_pCube5
+    400010: group1_polySurface21_polySurface25
+    400012: group1_polySurface23
+    400014: group1_polySurface26_polySurface21
+    400016: group1_pTorus3
+    400018: //RootNode
+    400020: polySurface14_polySurface7
+    400022: polySurface24
+    400024: polySurface7_polySurface15
+    400026: pTorus2_group1
+    400028: textureEditorIsolateSelectSet_group1_polySurface13
+    2300000: group1_pCube1
+    2300002: group1_pCube2
+    2300004: group1_pCube3
+    2300006: group1_pCube4
+    2300008: group1_pCube5
+    2300010: group1_polySurface21_polySurface25
+    2300012: group1_polySurface23
+    2300014: group1_polySurface26_polySurface21
+    2300016: group1_pTorus3
+    2300018: polySurface14_polySurface7
+    2300020: polySurface24
+    2300022: polySurface7_polySurface15
+    2300024: pTorus2_group1
+    2300026: textureEditorIsolateSelectSet_group1_polySurface13
+    3300000: group1_pCube1
+    3300002: group1_pCube2
+    3300004: group1_pCube3
+    3300006: group1_pCube4
+    3300008: group1_pCube5
+    3300010: group1_polySurface21_polySurface25
+    3300012: group1_polySurface23
+    3300014: group1_polySurface26_polySurface21
+    3300016: group1_pTorus3
+    3300018: polySurface14_polySurface7
+    3300020: polySurface24
+    3300022: polySurface7_polySurface15
+    3300024: pTorus2_group1
+    3300026: textureEditorIsolateSelectSet_group1_polySurface13
+    4300000: group1_pCube1
+    4300002: group1_pCube2
+    4300004: group1_pCube3
+    4300006: group1_pCube4
+    4300008: group1_pCube5
+    4300010: group1_polySurface21_polySurface25
+    4300012: group1_polySurface23
+    4300014: group1_polySurface26_polySurface21
+    4300016: group1_pTorus3
+    4300018: polySurface14_polySurface7
+    4300020: polySurface24
+    4300022: polySurface7_polySurface15
+    4300024: pTorus2_group1
+    4300026: textureEditorIsolateSelectSet_group1_polySurface13
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_pCube1Mat
+    second: {fileID: 2100000, guid: 716083f2dcaaec94e806c83f647669d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_pCube2Mat
+    second: {fileID: 2100000, guid: 750f4d4de061e3e469b92670fd9c01e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_pCube3Mat
+    second: {fileID: 2100000, guid: fb1b2bab43c70524082490f5c7fe7ae8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_pCube4Mat
+    second: {fileID: 2100000, guid: 70ec5572300310844b3080a89d180b41, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_pCube5Mat
+    second: {fileID: 2100000, guid: 529b8fe2cb5646148b6f67394700d569, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_pTorus3Mat
+    second: {fileID: 2100000, guid: c72df73e16781d74faa3721aadd6c152, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_polySurface21_polySurface25Mat
+    second: {fileID: 2100000, guid: dd5c92eca0877b040b273224a1ead480, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_polySurface23Mat
+    second: {fileID: 2100000, guid: e2f7dce665ea3c347a0050fd45e0e0fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: group1_polySurface26_polySurface21Mat
+    second: {fileID: 2100000, guid: 2b5b50ad67a76bc4288687aab8e9a47e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pTorus2_group1Mat
+    second: {fileID: 2100000, guid: 80c8a1b5b71a1dc45b75523adbff23b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: polySurface14_polySurface7Mat
+    second: {fileID: 2100000, guid: da1a3003fe633e945a4f9b528061554d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: polySurface24Mat
+    second: {fileID: 2100000, guid: 0366d2aa377ef9943891ec415a826f1a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: polySurface7_polySurface15Mat
+    second: {fileID: 2100000, guid: 37451dfc3fba0034faf50bf2a67a8ae7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: textureEditorIsolateSelectSet_group1_polySurface13Mat
+    second: {fileID: 2100000, guid: fe7c23c410e13954ca76e86c67aa02f7, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
