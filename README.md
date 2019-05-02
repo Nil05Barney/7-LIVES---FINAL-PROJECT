@@ -1,4 +1,4 @@
-# 7 LIVES
+# 7 LIVES - LOGO
 ![](https://github.com/Nil05Barney/7-LIVES---FINAL-PROJECT/blob/master/WikiResources/7%20lives.png)
 
 # **7 LIVES** 
