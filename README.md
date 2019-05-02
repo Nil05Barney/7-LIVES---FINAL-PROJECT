@@ -1,4 +1,4 @@
-# 7 LIVES - ALPHA
+# 7 LIVES
 ![](https://github.com/Nil05Barney/7-LIVES---FINAL-PROJECT/blob/master/WikiResources/7%20lives.png)
 
 # **7 LIVES** 
